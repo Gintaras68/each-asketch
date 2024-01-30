@@ -1,0 +1,34 @@
+body {
+    background-color: azure;
+}
+
+.container {
+    max-width: 800px;
+    margin: 10px auto;;
+}
+
+h1 {
+    text-align: center;
+}
+
+.control {
+    margin-bottom: 20px;
+    min-height: 150px;
+    background-image: url('./img/sid.png');
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-size: contain;
+}
+
+.paper {
+    padding: 20px;
+    min-height: 400px;
+}
+
+.sheet {
+    height: 400px;
+    width: 400px;
+    box-shadow: 3px 3px 15px 5px grey;
+    background-color: white;
+}
+
