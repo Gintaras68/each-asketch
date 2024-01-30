@@ -12,6 +12,8 @@ h1 {
 }
 
 .control {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
     min-height: 150px;
     background-image: url('./img/sid.png');
@@ -20,6 +22,15 @@ h1 {
     background-size: contain;
 }
 
+form {
+    margin-left: 30%;
+}
+
+.inputField {
+    margin-bottom: 10px;
+}
+
+
 .paper {
     padding: 20px;
     min-height: 400px;
@@ -27,8 +38,12 @@ h1 {
 
 .sheet {
     height: 400px;
-    width: 400px;
-    box-shadow: 3px 3px 15px 5px grey;
+    width: 100%;
+    box-shadow: 3px 3px 10px 5px grey;
     background-color: white;
+    transition: background-color 0.2s ease-in-out;
 }
 
+.sheet:hover {
+    background-color: green;
+}
