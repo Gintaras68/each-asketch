@@ -1,6 +1,6 @@
 :root {
     --pixelSize: 7px;
-    --columns: 90;
+    /* --columns: 70; */
 }
 
 body {
@@ -41,15 +41,20 @@ form {
     min-height: 400px;
 }
 
-.sheet {
-    height: 400px;
-    width: 100%;
+table {
+    margin: 0 auto;
     box-shadow: 3px 3px 10px 5px grey;
     background-color: white;
+    border-spacing: 0;
 }
 
 td {
-    width: 7px;
-    height: 7px;
+    width: var(--pixelSize);
+    height: var(--pixelSize);
+    padding: 0;
+}
+
+.pointed {
+    background-color: red;
 }
     
