@@ -1,6 +1,5 @@
 :root {
-    --pixelSize: 7px;
-    /* --columns: 70; */
+    --pixelSize: 4px;
 }
 
 body {
@@ -33,6 +32,18 @@ form {
 
 .inputField {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+output {
+    width: 3em;
+    text-align: right;
 }
 
 

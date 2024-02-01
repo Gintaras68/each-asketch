@@ -11,15 +11,19 @@
     <main class="container">
       <h1>Programėlė EATCH-ASKETCH</h1>
       <div class="control">
-        <!-- <form action="" method="get">
+        <form action="" method="get">
           <div class="inputField">
-              <label>
-                Kiek stulpelių
-                <input type="number" name="rows" value="200" />
-              </label>
+              <label for="columns">Kiek stulpelių</label>
+              <input class="inputColumns" id="columns" type="range" name="columns" min="20" max="200" step="5" oninput="this.nextElementSibling.value = this.value" />  
+              <output id="colOutput">110</output>     
           </div>
-          <button type="submit">Kurti lapą</button>
-        </form> -->
+          <div class="inputField">
+            <label for="rows">Kiek eilučių</label>
+            <input class="inputRows" id="rows" type="range" name="rows" min="20" max="150" step="5" oninput="this.nextElementSibling.value = this.value" />  
+            <output id="rowOutput">85</output>       
+        </div>
+          <button type="submit">Naujas lapas</button>
+        </form>
       </div>
       <div class="paper">
         <div class="sheet">
